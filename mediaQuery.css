@@ -1,1 +1,5 @@
-
+@media screen and (max-width: 1378px) {
+    .slide-profile>.skills {
+        display: none;
+    }
+}
