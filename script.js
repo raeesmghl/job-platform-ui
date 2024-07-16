@@ -1,3 +1,6 @@
+// slidebar navItems functionality. 
+
+
 let navLinks = document.querySelectorAll('.slide-nav .item');
 
 navLinks.forEach(item => {
