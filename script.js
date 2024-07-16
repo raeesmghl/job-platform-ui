@@ -96,6 +96,7 @@ document.addEventListener('click',(event)=>{
 
 
 // saveButton functionality
+// same concept as bell icon (as we are changing a single class)
 let saveJobBtns = document.querySelectorAll('.card-header>i');
 
 
