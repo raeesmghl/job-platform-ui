@@ -106,3 +106,43 @@ saveJobBtns.forEach((saveBtn)=>{
         saveBtn.classList.toggle('bxs-bookmark-alt');
     })
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// script for filter section checkboxes
+
+let checkBoxes = document.querySelectorAll('.checkbox div');
+
+checkBoxes.forEach((div)=>{
+    let checkbox = div.children[0];
+    let label = div.children[1];
+
+    checkbox.addEventListener('change',()=>{
+        if(checkbox.checked){
+            label.style.color = 'var(--dark)';
+            label.style.fontWeight = '600';
+        }else{
+            label.style.color = 'var(--grey)'
+            label.style.fontWeight = '400';
+        }
+    })
+});
+
