@@ -30,6 +30,7 @@ navLinks.forEach(item => {
 
 // bell icon functionality.
 // on click i want to fill the bell icon
+// boxicon has bx class for lite-element (only bordered) and bxs class for filled-elements
 
 
 let bellIcon = document.querySelector('#bell-icon');
