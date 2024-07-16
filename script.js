@@ -28,6 +28,8 @@ navLinks.forEach(item => {
 
 
 
+// bell icon functionality.
+// on click i want to fill the bell icon
 
 
 let bellIcon = document.querySelector('#bell-icon');
