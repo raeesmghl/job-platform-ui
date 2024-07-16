@@ -89,3 +89,19 @@ document.addEventListener('click',(event)=>{
 
 
 
+
+
+
+
+
+
+// saveButton functionality
+let saveJobBtns = document.querySelectorAll('.card-header>i');
+
+
+saveJobBtns.forEach((saveBtn)=>{
+    saveBtn.addEventListener('click',()=>{
+        saveBtn.classList.toggle('bx-bookmark-alt');
+        saveBtn.classList.toggle('bxs-bookmark-alt');
+    })
+})
