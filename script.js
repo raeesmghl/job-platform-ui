@@ -50,6 +50,7 @@ bellIcon.addEventListener('click',()=>{
 
 
 
+// when you click the menu button 
 
 let menuToggle = document.querySelector('#menuToggle');
 let slideBar = document.querySelector('.slidebar');
