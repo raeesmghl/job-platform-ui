@@ -129,6 +129,8 @@ saveJobBtns.forEach((saveBtn)=>{
 
 // script for filter section checkboxes
 
+// as checkbox is checked, we also want to change the color and font-weight of the label
+
 let checkBoxes = document.querySelectorAll('.checkbox div');
 
 checkBoxes.forEach((div)=>{
