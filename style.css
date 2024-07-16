@@ -51,6 +51,8 @@ p {
 }
 
 
+
+/* styles for slide bar starts */
 .slidebar {
     flex: 1;
     background-color: var(--dark);
