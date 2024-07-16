@@ -50,6 +50,11 @@ bellIcon.addEventListener('click',()=>{
 
 
 
+
+
+
+
+
 // when you click the menu button 
 
 let menuToggle = document.querySelector('#menuToggle');
@@ -64,3 +69,23 @@ menuToggle.addEventListener('click',()=>{
 // but if you want to send it back (translate:-100%)
 // we did not use a sepcial 'cancle button' for sending it back, either we used the whole document
 // if user clicks on document (expect menu button or slidebar), slidebar gets back
+
+document.addEventListener('click',(event)=>{
+    // if you click on the menu button or the slidebar, isClickInside becomes true;
+    let isClickInside = slideBar.contains(event.target) || menuToggle.contains(event.target);
+
+    // if isClickInside is true; it is visible on the page
+    if(isClickInside){
+        slideBar.style.translate= '0px';
+    }else{
+        // else if you dont click on the slidebar or menu button (you click anywhere on the page) the slideBar will move -100% left and will not be visible;
+
+        slideBar.style.translate = '-100%'
+    }
+})
+
+
+
+
+
+
