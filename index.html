@@ -1,1 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- boxicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- media Query -->
+     <link rel="stylesheet" href="mediaQuery.css">
+
+    <title>Job Platform | Raees Mughal</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="slidebar">
+
+            <a href="#">works</a>
+
+            <div class="slide-nav">
+
+                <div class="item active">
+                    <i class='bx bx-home-alt-2'></i>
+                    <a href="#">home</a>
+                </div>
+
+                <div class="item">
+                    <i class='bx bx-notification'></i>
+                    <a href="#">notifications</a>
+                </div>
+
+                <div class="item">
+                    <i class='bx bx-briefcase'></i>
+                    <a href="#">my works</a>
+                </div>
+
+                <div class="item">
+                    <i class='bx bx-bookmark-minus'></i>
+                    <a href="#">saved jobs</a>
+                </div>
+                <div class="item">
+                    <i class='bx bx-cog'></i>
+                    <a href="#">settings</a>
+                </div>
+            </div>
+
+            <div class="slide-profile">
+                <div class="info">
+                    <img src="assets/profile.jpg" alt="Raees Mughal" height="20">
+                    <a href="#">Raees</a>
+                    <p>Frontend Dev</p>
+                </div>
+                <div class="skills">
+                    <h5>skills and expertise</h5>
+
+                    <div class="skill-tags">
+                        <div class="item">
+                            <p>HTML | CSS</p>
+                        </div>
+                        <div class="item">
+                            <p>javascript</p>
+                        </div>
+                        <div class="item">
+                            <p>figma | ux/ui</p>
+                        </div>
+                        <div class="item">
+                            <p>tailwind</p>
+                        </div>
+                        <div class="item">
+                            <p>node.js</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="show-profile">show profile</button>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="navbar">
+                <button id="menuToggle"><i class='bx bx-menu'></i></button>
+
+                <div class="search">
+                    <i class='bx bx-search'></i>
+                    <input type="text" name="search-job" id="search-job" placeholder="search for jobs or companies"
+                        list="jobs">
+                    <datalist id="jobs">
+                        <option value="Frontend">
+                        <option value="Backend">
+                        <option value="Fullstack">
+                        <option value="MERN stack">
+                        <option value="Java">
+                    </datalist>
+                </div>
+                <div class="city">
+                    <i class='bx bx-current-location'></i>
+                    <input type="text" name="search-location" id="search-location"
+                        placeholder="enter city state or region" list="locations">
+                    <datalist id="locations">
+                        <option value="Sheikhupura">
+                        <option value="Lahore">
+                        <option value="Karachi">
+                        <option value="Islamabad">
+                        <option value="Sialkot">
+                    </datalist>
+                </div>
+
+                <button>search</button>
+
+                <i class="bx bx-bell" id="bell-icon"></i>
+
+                <div class="user-info">
+                    <img src="assets/profile.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="main-body"> 
+                <div class="main-content">
+                    <div class="main-header">
+                        <h3>opportunities matching your skills <span>127</span></h3>
+                        <p>here are jobs that fit your skill set</p>
+                    </div>
+
+
+                    <div class="job-cards">
+
+
+
+                        <!-- 1 -->
+                        <div class="card">
+                            <div class="card-header">
+
+                                <div class="job-info">
+                                    <i class="bx bxl-apple"></i>
+                                    <div>
+                                        <h5>Apple <span>| just now</span></h5>
+                                        <a href="#">junior UI designer</a>
+                                        <p>San Francisco, USA</p>
+                                    </div>
+                                </div>
+                                <i class='bx bx-bookmark-alt'></i>
+                            </div>
+
+                            <div class="card-tags">
+                                <a href="#">remote</a>
+                                <a href="#">freelance</a>
+                            </div>
+
+                            <div class="card-description">
+                                we are seeking a junior UI designer with a passion for creating intuitive user
+                                interfaces.
+                                join our dynamic team at <span>@apple</span> and contribute to innovative design
+                                projects.
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+                        <!-- 2 -->
+                        <div class="card">
+                            <div class="card-header">
+
+                                <div class="job-info">
+                                    <i class='bx bxl-microsoft'></i>
+                                    <div>
+                                        <h5>microsoft <span>| 12 minutes ago</span></h5>
+                                        <a href="#">frontend developer</a>
+                                        <p>Washington, US</p>
+                                    </div>
+                                </div>
+                                <i class='bx bx-bookmark-alt'></i>
+                            </div>
+
+                            <div class="card-tags">
+                                <a href="#">frontend</a>
+                                <a href="#">UI/UX</a>
+                            </div>
+
+                            <div class="card-description">
+                                We want someone to convert our figma design to pixel perfect responsive webpages. It
+                                should be perfect and the code should be well structured. Please start your proposal
+                                with the sum of eight and five.
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+                        <!-- 3 -->
+                        <div class="card">
+                            <div class="card-header">
+
+                                <div class="job-info">
+                                    <i class='bx bxl-google'></i>
+                                    <div>
+                                        <h5>google <span>| 39 minutes ago</span></h5>
+                                        <a href="#">java developer</a>
+                                        <p>California, US</p>
+                                    </div>
+                                </div>
+                                <i class='bx bx-bookmark-alt'></i>
+                            </div>
+
+                            <div class="card-tags">
+                                <a href="#">java</a>
+                                <a href="#">remote</a>
+                            </div>
+
+                            <div class="card-description">
+                                We are building an app studio full of innovative and viral apps, some of which powered
+                                by AI, which means that work must be done thoughtfully and quickly, while writing
+                                scalable, simple, and testable code.
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <!-- 4 -->
+                        <div class="card">
+                            <div class="card-header">
+
+                                <div class="job-info">
+                                    <i class='bx bxl-meta'></i>
+                                    <div>
+                                        <h5>facebook <span>| 1 hour ago</span></h5>
+                                        <a href="#">Backend dev</a>
+                                        <p>Menlo Park, US</p>
+                                    </div>
+                                </div>
+                                <i class='bx bx-bookmark-alt'></i>
+                            </div>
+
+                            <div class="card-tags">
+                                <a href="#">remote</a>
+                                <a href="#">freelance</a>
+                            </div>
+
+                            <div class="card-description">
+                                I need someone who has experience on Camunda and help me on parallel gateway and Event.
+                                I need someone who has experience on Camunda and help me on parallel gateway and Event.
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <!-- 5 -->
+                        <div class="card">
+                            <div class="card-header">
+
+                                <div class="job-info">
+                                    <i class='bx bxl-amazon'></i>
+                                    <div>
+                                        <h5>amazon <span>| 2 hours ago</span></h5>
+                                        <a href="#">bike rider</a>
+                                        <p>bikhi, pakistan</p>
+                                    </div>
+                                </div>
+                                <i class='bx bx-bookmark-alt'></i>
+                            </div>
+
+                            <div class="card-tags">
+                                <a href="#">bike</a>
+                                <a href="#">petrol</a>
+                            </div>
+
+                            <div class="card-description">
+                                The primary users will be individual sellers and buyers, and the application will focus
+                                on providing a seamless experience for both parties. The platform will operate
+                                exclusively in sabzi mandi.
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+                        <!-- 6 -->
+                        <div class="card">
+                            <div class="card-header">
+
+                                <div class="job-info">
+                                    <i class="bx bxl-apple"></i>
+                                    <div>
+                                        <h5>twitter <span>| 5 hours ago</span></h5>
+                                        <a href="#">cleaner</a>
+                                        <p>California, US</p>
+                                    </div>
+                                </div>
+                                <i class='bx bx-bookmark-alt'></i>
+                            </div>
+
+                            <div class="card-tags">
+                                <a href="#">remote</a>
+                                <a href="#">freelance</a>
+                            </div>
+
+                            <div class="card-description">
+                                This role requires a strong background in web scraping, data extraction, and data
+                                processing, with a focus on accuracy and efficiency.
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="main-filter">
+
+                    <div class="header">
+                        <h3>job filter</h3>
+                        <a href="#">clear all</a>
+                    </div>
+
+                    <div class="item">
+
+                        <div class="title">
+                            <h4>time</h4>
+                            <a href="#">clear</a>
+                        </div>
+
+
+                        <div class="checkbox">
+                            <div>
+                                <input type="checkbox" id="justNow">
+                                <label for="justNow">just now</label>
+                            </div>
+                            <p>50 jobs</p>
+                        </div>
+
+
+                        <div class="checkbox">
+                            <div>
+                                <input type="checkbox" id="weekly">
+                                <label for="weekly">weekly</label>
+                            </div>
+                            <p>150 jobs</p>
+                        </div>
+
+
+
+                        <div class="checkbox">
+                            <div>
+                                <input type="checkbox" id="monthly">
+                                <label for="monthly">monthly</label>
+                            </div>
+                            <p>263 jobs</p>
+                        </div>
+
+
+
+                        <div class="checkbox">
+                            <div>
+                                <input type="checkbox" id="allTime">
+                                <label for="allTime">all</label>
+                            </div>
+                            <p>482 jobs</p>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="item">
+
+                        <div class="title">
+                            <h4>experience</h4>
+                            <a href="#">clear</a>
+                        </div>
+
+
+                        <div class="checkbox">
+                            <div>
+                                <input type="checkbox" id="entry">
+                                <label for="entry">entry</label>
+                            </div>
+                            <p>94 jobs</p>
+                        </div>
+
+
+                        <div class="checkbox">
+                            <div>
+                                <input type="checkbox" id="junior">
+                                <label for="junior">junior</label>
+                            </div>
+                            <p>34 jobs</p>
+                        </div>
+
+
+
+                        <div class="checkbox">
+                            <div>
+                                <input type="checkbox" id="middle">
+                                <label for="middle">middle</label>
+                            </div>
+                            <p>118 jobs</p>
+                        </div>
+
+
+
+                        <div class="checkbox">
+                            <div>
+                                <input type="checkbox" id="senior">
+                                <label for="senior">senior</label>
+                            </div>
+                            <p>47 jobs</p>
+                        </div>
+
+                    </div>
+
+
+
+
+
+                    <div class="item">
+
+                        <div class="title">
+                            <h4>job type</h4>
+                            <a href="#">clear</a>
+                        </div>
+
+
+                        <div class="checkbox">
+                            <div>
+                                <input type="checkbox" id="fullTime">
+                                <label for="fullTime">full time</label>
+                            </div>
+                            <p>12 jobs</p>
+                        </div>
+
+
+                        <div class="checkbox">
+                            <div>
+                                <input type="checkbox" id="partTime">
+                                <label for="partTime">part time</label>
+                            </div>
+                            <p>63 jobs</p>
+                        </div>
+
+
+
+
+                        <div class="checkbox">
+                            <div>
+                                <input type="checkbox" id="contract">
+                                <label for="contract">contract</label>
+                            </div>
+                            <p>127 jobs</p>
+                        </div>
+
+
+
+                        <div class="checkbox">
+                            <div>
+                                <input type="checkbox" id="remote">
+                                <label for="remote">remote</label>
+                            </div>
+                            <p>291 jobs</p>
+                        </div>
+
+
+
+
+                    </div>
+
+
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
