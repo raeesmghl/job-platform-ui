@@ -1,4 +1,6 @@
 // slidebar navItems functionality. 
+// i added a functionality (hover effect) in css
+// but when you are active, you need this javascript code and a css class .active;
 
 
 let navLinks = document.querySelectorAll('.slide-nav .item');
