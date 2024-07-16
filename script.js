@@ -58,3 +58,7 @@ let slideBar = document.querySelector('.slidebar');
 menuToggle.addEventListener('click',()=>{
     slideBar.style.translate = '0px';
 })
+
+
+
+// but if you want to send it back (translate:-100%),
