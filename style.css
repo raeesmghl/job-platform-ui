@@ -3,6 +3,8 @@
 
 
 
+
+/* all the colors used in the page are stored in the root */
 :root {
     --dark: #111;
     --grey: #a4a8ac;
