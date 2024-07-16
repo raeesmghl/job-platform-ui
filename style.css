@@ -1,1 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
+
+
+:root {
+    --dark: #111;
+    --grey: #a4a8ac;
+    --dark-grey: #6b6d6e;
+    --eee: #eee;
+    --fa: #fafafa;
+    --333: #333333;
+    --light-grey: #e7e7e7;
+    --profile-img-border: rgb(55, 208, 255);
+    --card-border: #f2f2f2;
+    --card-shadow: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Ubuntu", sans-serif;
+    text-transform: capitalize;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    /* overflow: hidden; */
+}
+
+a {
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--dark);
+}
+
+p {
+    color: var(--grey);
+}
+
+
+.slidebar {
+    flex: 1;
+    background-color: var(--dark);
+
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition: all .3s ease;
+}
+
+.slidebar>a {
+    color: var(--eee);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.slidebar>.slide-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.slidebar>.slide-nav .item {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.slidebar>.slide-nav .item:hover:not(.active) {
+    background-color: var(--333);
+}
+
+
+.slidebar>.slide-nav a {
+    color: var(--grey);
+}
+
+.slidebar>.slide-nav i {
+    color: var(--grey);
+    font-size: 18px;
+}
+
+.active {
+    background-color: var(--fa);
+}
+
+.active a {
+    color: var(--dark) !important;
+}
+
+.active i {
+    color: var(--dark) !important;
+}
+
+
+
+
+.slide-profile {
+    padding: 10px;
+    background-color: var(--fa);
+    border-radius: 8px;
+    /* overflow: hidden; */
+
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.slide-profile>.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.slide-profile>.info img {
+    height: 56px;
+    width: 56px;
+    border-radius: 50px;
+    object-fit: cover;
+    object-position: top;
+    position: relative;
+    border: 2px solid var(--profile-img-border);
+    position: relative;
+}
+
+
+.slide-profile>.info a {
+    margin-top: 12px;
+    font-weight: 600;
+}
+
+.slide-profile>.info p {
+    font-size: 12px;
+    color: var(--grey);
+
+    margin: 5px 0 10px;
+}
+
+.slide-profile>.skills>h5 {
+    text-wrap: nowrap;
+
+}
+
+
+
+
+.slide-profile>.skills>.skill-tags {
+    margin: 12px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.slide-profile>.skills>.skill-tags>.item {
+    font-size: 10px;
+    font-weight: 500;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: var(--light-grey);
+
+}
+
+.slide-profile>.skills>.skill-tags>.item>p {
+    color: var(--dark-grey);
+}
+
+
+.slide-profile>button {
+    border: none;
+    background-color: var(--dark);
+    color: var(--eee);
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.main-container {
+    flex: 8;
+    padding: 20px;
+}
+
+.main-container>.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding-right: 20px;
+}
+
+.main-container>.navbar>.search,
+.main-container>.navbar>.city {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-grey);
+    border-radius: 8px;
+    width: 100%;
+    overflow: hidden;
+    padding: 0 8px;
+}
+
+.main-container>.navbar>.search>input,
+.main-container>.navbar>.city>input {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+.main-container>.navbar>.search>i,
+.main-container>.navbar>.city>i {
+    font-size: 24px;
+    color: var(--333);
+}
+
+
+
+.main-container>.navbar>button {
+    background-color: var(--dark);
+    color: var(--fa);
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+
+}
+
+.main-container>.navbar>button:active {
+    background-color: var(--333);
+    scale: .95;
+}
+
+
+
+.main-container>.navbar>#menuToggle {
+    padding: 6px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+
+
+.main-container>.navbar>i {
+    font-size: 28px;
+    cursor: pointer;
+    color: var(--grey);
+}
+
+
+.main-container>.navbar>.user-info>img {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50px;
+    border: 2px solid var(--profile-img-border);
+}
+
+
+
+
+
+
+
+
+
+.main-container .main-body {
+    display: flex;
+
+}
+
+.main-container .main-body .main-content {
+    flex: 9;
+  
+
+}
+
+
+
+
+
+
+
+.main-container .main-body .main-content .main-header {
+    margin-top: 20px;
+}
+
+.main-container .main-body .main-content .main-header h3 span {
+    font-size: 12px;
+    color: var(--grey);
+}
+
+.main-container .main-body .main-content .main-header p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: var(--grey);
+}
+
+
+
+.main-container .main-body .main-content .job-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-right: 10px;
+    margin-top: 10px;
+    gap: 20px;
+
+}
+
+
+
+
+.main-container .main-body .main-content .job-cards .card {
+    padding: 12px;
+    box-shadow: 0 10px 30px var(--card-shadow);
+    border: 2px solid var(--card-border);
+    border-radius: 10px;
+    transition: all .3s ease;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-container .main-body .main-content .job-cards .card>.card-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-container .main-body .main-content .job-cards .card>.card-header>i {
+    font-size: 24px;
+    color: var(--grey);
+}
+
+.main-container .main-body .main-content .job-cards .card>.card-header>.job-info {
+    display: flex;
+    gap: 20px;
+
+}
+
+.main-container .main-body .main-content .job-cards .card>.card-header>.job-info i {
+    font-size: 28px;
+    height: 46px;
+    width: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    color: var(--dark);
+    border: 1px solid var(--light-grey);
+}
+
+.main-container .main-body .main-content .job-cards .card>.card-header>.job-info>div {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+
+.main-container .main-body .main-content .job-cards .card>.card-header>.job-info>div>h5 {
+    font-size: 16px;
+    color: var(--grey);
+}
+
+.main-container .main-body .main-content .job-cards .card>.card-header>.job-info>div>h5>span {
+    font-size: 12px;
+    color: var(--grey);
+    font-weight: 400;
+}
+
+.main-container .main-body .main-content .job-cards .card>.card-header>.job-info>div>a {
+    font-size: 12px;
+    color: var(--dark);
+    font-weight: 600;
+}
+
+.main-container .main-body .main-content .job-cards .card>.card-header>.job-info>div>p {
+    font-size: 12px;
+    color: var(--grey);
+    font-weight: 400;
+}
+
+.main-container .main-body .main-content .job-cards .card>.card-tags {
+    display: flex;
+    gap: 5px;
+}
+
+.main-container .main-body .main-content .job-cards .card>.card-tags a {
+    background-color: var(--light-grey);
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: var(--dark-grey);
+    font-weight: 500;
+}
+
+
+
+.main-container .main-body .main-content .job-cards .card>.card-description {
+    font-size: 12px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    height: calc(18px *3);
+}
+
+
+
+
+
+
+
+.main-container .main-body .main-filter {
+    flex: 2;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding: 20px 0;
+
+
+}
+
+
+
+.main-container .main-body .main-filter .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.main-container .main-body .main-filter .item {
+    /* background-color: var(--light-grey);  */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main-container .main-body .main-filter a {
+    color: rgb(255, 134, 134);
+    font-weight: 600;
+}
+
+.main-container .main-body .main-filter .item .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+
+.main-container .main-body .main-filter .item .checkbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-container .main-body .main-filter .item .checkbox>p {
+    font-size: 14px;
+}
+
+.main-container .main-body .main-filter .item .checkbox div {
+    display: flex;
+    gap: 8px;
+}
+
+.main-container .main-body .main-filter .item .checkbox div input[type="checkbox"] {
+    height: 14px;
+    width: 14px;
+    accent-color: var(--dark);
+}
+
+.main-container .main-body .main-filter .item .checkbox div label {
+    font-size: 14px;
+    color: var(--grey);
+}
