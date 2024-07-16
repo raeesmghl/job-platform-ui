@@ -40,3 +40,20 @@ bellIcon.addEventListener('click',()=>{
     bellIcon.classList.toggle('bx-bell');
     console.log(bellIcon.style.color)
 })
+
+
+
+
+
+
+
+
+
+
+
+let menuToggle = document.querySelector('#menuToggle');
+let slideBar = document.querySelector('.slidebar');
+
+menuToggle.addEventListener('click',()=>{
+    slideBar.style.translate = '0px';
+})
