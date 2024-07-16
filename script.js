@@ -13,3 +13,27 @@ navLinks.forEach(item => {
         item.classList.add('active')
     })
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let bellIcon = document.querySelector('#bell-icon');
+
+bellIcon.addEventListener('click',()=>{
+    bellIcon.classList.toggle('bxs-bell');
+    bellIcon.classList.toggle('bx-bell');
+    console.log(bellIcon.style.color)
+})
